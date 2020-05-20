@@ -225,7 +225,8 @@ p.destaque {
     display: grid;
     align-content: start;
     padding: 30px;
-    row-gap: 30px;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 /* footer */
@@ -306,6 +307,13 @@ p.destaque {
 
     .sidenav li a {
         margin: 30px 30px 30px 0;
+    }
+}
+
+/* 600px */
+@media (max-width: 37.5em) {
+    .content {
+        grid-template-columns: auto;
     }
 }
 
