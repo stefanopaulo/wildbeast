@@ -239,3 +239,29 @@ p.destaque {
     text-align: center;
     padding: 30px;
 }
+
+/* 1200px */
+@media (max-width: 75em) {
+    .estrutura {
+        grid-template-areas:
+            "header header header"
+            "sidenav content content"
+            "sidenav anuncios anuncios"
+            "footer footer footer"
+        ;
+    }
+}
+
+/* 760px */
+@media (max-width: 47em) {
+    .estrutura {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header"
+            "sidenav"
+            "content"
+            "anuncios"
+            "footer"
+        ;
+    }
+}
